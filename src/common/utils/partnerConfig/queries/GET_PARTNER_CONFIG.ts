@@ -9,6 +9,67 @@ query PartnerConfig($partnerConfigId: Int!) {
         domain
         subdomain
       }
+      version
+      theme {
+        primaryColor
+      }
+      text {
+        navbar {
+          navbarTitle
+          navbarHome
+          navbarInfo
+          navbarNews
+          navbarHighlights
+          navbarJoinButton
+        }
+        hero {
+          heroPrefix
+          heroTitle
+          heroDescription
+          heroJoinButtonText
+        }
+        info {
+          infoHeader
+          infoSubheader
+          infoSubheaderPlacement
+        }
+        highlights {
+          highlightsHeader
+          highlightsSubheader
+          highlightsPlacement
+        }
+        news {
+          newsHeader
+          newsSubheader
+          newsSubheaderPlacement
+        }
+      }
+      content {
+        enableInfo
+        enableDefaultInfo
+        customInfo {
+          icon
+          title
+          description
+        }
+        enableNews
+        enableDefaultNews
+        customNews {
+          image
+          date
+          title
+          description
+          content
+        }
+        enableHighlights
+        enableDefaultHighlights
+        customHighlights {
+          image
+          title
+          description
+          tags
+        }
+      }
     }
     partner {
       id

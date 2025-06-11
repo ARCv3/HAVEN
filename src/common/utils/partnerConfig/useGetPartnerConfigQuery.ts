@@ -7,7 +7,7 @@ interface QueryParameter {
 }
 
 interface QueryResponse {
-    getPartnerConfig: PartnerConfigResponse;
+    partnerConfig: PartnerConfigResponse;
 }
 
 export interface GetPartnerConfigQueryProps {
@@ -24,7 +24,7 @@ const useGetPartnerConfigQuery = (props: GetPartnerConfigQueryProps) => {
 
     return {
         states: {
-            data: data?.getPartnerConfig,
+            data: data?.partnerConfig,
             loading,
             error
         },
