@@ -1,10 +1,12 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import './common/index.css'
+import App from './common/App.tsx'
+
+import { ApolloProvider } from '@apollo/client';
+import graphqlClientConfig from './common/config/graphqqlClientConfig.ts';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+  <ApolloProvider client={graphqlClientConfig}>
     <App />
-  </StrictMode>,
+  </ApolloProvider>
 )
