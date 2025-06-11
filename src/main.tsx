@@ -6,6 +6,6 @@ import graphqlClientConfig from './common/config/graphqqlClientConfig.ts';
 
 createRoot(document.getElementById('root')!).render(
   <ApolloProvider client={graphqlClientConfig}>
-    <App />
+      <App />
   </ApolloProvider>
 )
