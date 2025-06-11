@@ -1,5 +1,4 @@
 import { createRoot } from 'react-dom/client'
-import './common/index.css'
 import App from './common/App.tsx'
 
 import { ApolloProvider } from '@apollo/client';
