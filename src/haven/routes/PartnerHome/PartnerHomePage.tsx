@@ -7,8 +7,6 @@ function PartnerHomePage() {
     return (
         <>
 
-
-
         </>
     )
 }
