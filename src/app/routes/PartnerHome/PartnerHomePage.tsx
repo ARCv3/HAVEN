@@ -5,9 +5,7 @@ function PartnerHomePage() {
     useInitializePartnerHomePage();
 
     return (
-        <>
-
-        </>
+        <></>
     )
 }
 

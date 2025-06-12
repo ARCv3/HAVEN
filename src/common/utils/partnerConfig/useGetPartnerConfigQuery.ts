@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client";
-import type { PartnerConfigResponse } from "../../../types/PartnerConfig";
+import type { PartnerConfig } from "../../../types/PartnerConfig";
 import GET_PARTNER_CONFIG from "./queries/GET_PARTNER_CONFIG";
 
 interface QueryParameter {
@@ -7,7 +7,7 @@ interface QueryParameter {
 }
 
 interface QueryResponse {
-    partnerConfig: PartnerConfigResponse;
+    partnerConfig: PartnerConfig;
 }
 
 export interface GetPartnerConfigQueryProps {

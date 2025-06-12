@@ -19,13 +19,8 @@ const useInitializePartnerHomePage = () => {
     useEffect(() => {
         const config : PartnerConfig = partnerConfigQuery.data?
         {
-            domain: partnerConfigQuery.data.Haven.domain.domain,
-            customDomainEnabled: partnerConfigQuery.data.Haven.domain.customDomainEnabled,
-            subdomain: partnerConfigQuery.data.Haven.domain.subdomain,
-            isActive: partnerConfigQuery.data.partner.isActive,
-            isPremium: partnerConfigQuery.data.partner.premium,
-            id: partnerConfigQuery.data.partner.id,
-            name: partnerConfigQuery.data.partner.name,
+            Haven: partnerConfigQuery.data.Haven,
+            partner: partnerConfigQuery.data.partner
         } : {} as PartnerConfig
         setPartnerConfigLoading(partnerConfigQuery.loading);
         setPartnerConfig(config)

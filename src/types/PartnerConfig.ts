@@ -93,7 +93,7 @@ export interface HavenConfigResponse {
     content: HavenContentResponse;
 }
 
-export interface PartnerConfigResponse {
+export interface PartnerConfig {
     Haven: HavenConfigResponse;
     partner: PartnerResponse;
 }
