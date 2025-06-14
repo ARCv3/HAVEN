@@ -1,2 +1,2 @@
 # Amsterdam
-This is the original haven version A 
+Amsterdam is the first Haven version also known as version A. 

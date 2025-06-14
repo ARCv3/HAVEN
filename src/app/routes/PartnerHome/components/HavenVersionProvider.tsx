@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import usePartnerConfig from "../../../../common/states/partnerConfig/usePartnerConfig";
+import useGetHavenVersion from "../../../../common/states/haven/useGetHavenVerson";
 
-function HavenVesionProvider() {
+function HavenVersionProvider() {
 
     const partnerConfig = usePartnerConfig().states;
-    const [selectedVersion, setSelectedVersion] = useState<string | undefined>(undefined)
+    const [selectedVersion, setSelectedVersion] = useState<string>("");
 
     useEffect(() => {
 
@@ -14,11 +15,12 @@ function HavenVesionProvider() {
 
     }, [partnerConfig.loading, partnerConfig.partnerConfig]);
 
-    return (
-        
+    const HavenVersion = useGetHavenVersion( { versionString: selectedVersion });
 
+    return (
+        <HavenVersion versionString={selectedVersion} />
     )
 
 }
 
-export default HavenVesionProvider;
+export default HavenVersionProvider;
