@@ -1,9 +1,10 @@
-import { Stack, Grid} from "@mui/material";
+import { Stack} from "@mui/material";
 import type { HavenProps } from "../../../common/states/haven/HavenProps";
 import { NotFoundPopup } from "../../../common/libs/molecules/PopupCard/index.js";
+import type { FC } from "react";
 
 
-function NotFoundHaven(props: HavenProps) {
+const NotFoundHaven : FC<HavenProps> = ( _ : HavenProps) => {
 
     return (
         <Stack>

@@ -1,3 +1,5 @@
+import type { PartnerConfig } from "../../../types/PartnerConfig";
+
 export interface HavenProps {
-    versionString?: string;
+    partnerConfig: PartnerConfig;
 }

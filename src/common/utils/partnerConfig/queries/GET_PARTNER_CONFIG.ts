@@ -45,6 +45,7 @@ query PartnerConfig($partnerConfigId: Int!) {
         }
       }
       content {
+        backgroundImage
         enableInfo
         enableDefaultInfo
         customInfo {

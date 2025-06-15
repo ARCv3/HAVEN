@@ -1,4 +1,4 @@
-import { NotFoundPopup }from "../index.js";
+import { NotFoundPopup } from "../index.js";
 
 export default {
     title: "PopupCard",

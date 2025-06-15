@@ -18,7 +18,7 @@ function HavenVersionProvider() {
     const HavenVersion = useGetHavenVersion( { versionString: selectedVersion });
 
     return (
-        <HavenVersion versionString={selectedVersion} />
+        <HavenVersion partnerConfig={partnerConfig.partnerConfig} />
     )
 
 }

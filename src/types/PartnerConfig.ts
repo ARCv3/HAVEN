@@ -29,7 +29,7 @@ export interface HavenNavBarTextResponse {
 export interface HavenInfoTextResponse {
     infoHeader: string;
     infoSubheader: string;
-    infoSubheaderPlacement: string;
+    infoSubheaderPlacement: 'above' | 'below';
 }
 
 export interface HavenNewsTextResponse {
@@ -74,6 +74,7 @@ export interface HavenHighlightsContentResponse {
 }
 
 export interface HavenContentResponse {
+    backgroundImage: string;
     enableInfo: boolean;
     enableDefaultInfo: boolean;
     customInfo: HavenInfoContentResponse[];

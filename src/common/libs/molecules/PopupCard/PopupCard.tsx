@@ -1,4 +1,4 @@
-import { Card, CardActions, CardContent, Grid, Stack } from "@mui/material";
+import { Card, CardActions, CardContent, Stack } from "@mui/material";
 import type { FC, ReactNode } from "react";
 import Typography from "../../atoms/Typography/index.js";
 

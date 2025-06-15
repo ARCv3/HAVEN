@@ -1,4 +1,5 @@
 @import "tailwindcss";
+body { min-height: 100%; }
 
 #root {
     min-width: 100vw;
