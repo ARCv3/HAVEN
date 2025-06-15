@@ -3,6 +3,7 @@ import type { HavenProps } from "../../../common/states/haven/HavenProps";
 import AmsterdamNavBar from "./components/AmsterdamNavBar";
 import { NavBar } from "../../../common/libs/molecules/NavBar";
 import AmsterdamHero from "./components/AmsterdamHero";
+import AmsterdamInfo from "./components/AmsterdamInfo";
 
 const BackgroundDiv = styled(Stack)({
     height: "100vh",
@@ -29,6 +30,7 @@ function AmsterdamHaven({ partnerConfig }: HavenProps) {
                 { /* <!-- acts as a spacer --> */ }
                 <NavBar icon={<></>} title={":))"} actions={[]} />
                 <AmsterdamHero config={partnerConfig.Haven.text.hero} />
+                <AmsterdamInfo config={partnerConfig.Haven.text.info} />
             </Stack>
         </>
     )
