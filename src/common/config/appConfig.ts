@@ -4,5 +4,5 @@ export interface CommonAppConfig {
 };
 
 export const commonAppConfig : CommonAppConfig = {
-    graphqlBaseUrl: 'https://localhost:3000'
+    graphqlBaseUrl: 'http://localhost:3000'
 };
