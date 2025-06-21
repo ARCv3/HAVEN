@@ -77,6 +77,7 @@ query PartnerConfig($partnerConfigId: Int!) {
       isActive
       name
       premium
+      guildSnowflake
     }
   }
 }

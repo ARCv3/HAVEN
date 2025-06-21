@@ -23,7 +23,7 @@ const AmsterdamHero : FC<AmsterdamHeroProps> = ( { config, ...props } ) => {
         <StyledStack justifyContent={"center"} alignItems={"center"} width={"100vw"} height={"100vh"} {...props}>
             <Typography style={{fontWeight: "lighter"}} variant={"body1"}>{config.heroPrefix}</Typography>
             <Typography style={{fontWeight: "bolder"}} variant={"h3"}>{config.heroTitle}</Typography>
-            <Typography className="pt-5 pb-5 max-w-md text-justify  " variant={"body1"}>{config.heroDescription}</Typography>
+            <Typography className="pt-5 pb-5 max-w-md text-justify px-5" variant={"body1"}>{config.heroDescription}</Typography>
             <StyledButton>Join Now <ArrowForward /></StyledButton>
         </StyledStack>    
     )

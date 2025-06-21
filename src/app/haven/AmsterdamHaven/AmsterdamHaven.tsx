@@ -29,8 +29,15 @@ function AmsterdamHaven({ partnerConfig }: HavenProps) {
             <Stack minHeight={"100vh"} direction={"column"}>
                 { /* <!-- acts as a spacer --> */ }
                 <NavBar icon={<></>} title={":))"} actions={[]} />
-                <AmsterdamHero config={partnerConfig.Haven.text.hero} />
-                <AmsterdamInfo config={partnerConfig.Haven.text.info} />
+                
+                <AmsterdamHero 
+                    config={partnerConfig.Haven.text.hero} 
+                />
+
+                <AmsterdamInfo 
+                    config={partnerConfig.Haven.text.info} 
+                    infoContent={partnerConfig.Haven.content} 
+                />
             </Stack>
         </>
     )
